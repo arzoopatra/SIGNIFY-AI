@@ -45,12 +45,12 @@ https://arzoopatra.github.io/Protex-Hack2Win/index.html
 ---
 
 ## 📂 Project Structure
-Protex-Hack2Win/
-│── index.html # Main landing page
-│── style.css # Styling and layout
-│── script.js # Core functionality
-│── assets/ # Images, icons, media files
 
+    Protex-Hack2Win/
+    ├── index.html        # Main landing page
+    ├── style.css         # Styling and layout
+    ├── script.js         # Core functionality
+    └── assets/           # Images, icons, media files
 ---
 
 ## ⚙️ How It Works
