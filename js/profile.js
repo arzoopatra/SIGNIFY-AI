@@ -105,7 +105,7 @@ onAuthStateChanged(auth, async (user) => {
   document.getElementById('earnedBadgeCount').textContent = earned.length ? `(${earned.length})` : '';
 
   earnedEl.innerHTML = earned.length === 0
-    ? `<div class="empty-msg"><span>🏅</span>No badges yet — complete challenges to unlock your first!</div>`
+    ? `<div class="empty-msg"><span>🏅</span>No badges yet — complete challenges and earn your first badge!</div>`
     : earned.map(b => `
         <div class="earned-badge-item">
           <div class="earned-badge-icon">${b.icon}</div>
