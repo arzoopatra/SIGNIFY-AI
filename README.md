@@ -1,6 +1,6 @@
 # 🛡️ Signify – Smart Safety & Assistance Platform
 
-Protex is an AI-powered safety and accessibility platform designed to enhance communication, personal security, and real-time assistance. It integrates intelligent features such as sign language translation, emergency alerts, and user-friendly interaction tools to create a safer and more inclusive digital environment.
+ Signify  is an AI-powered safety and accessibility platform designed to enhance communication, personal security, and real-time assistance. It integrates intelligent features such as sign language translation, emergency alerts, and user-friendly interaction tools to create a safer and more inclusive digital environment.
 
 🌐 **Live Demo:**  
 https://arzoopatra.github.io/Protex-Hack2Win/index.html
@@ -46,7 +46,7 @@ https://arzoopatra.github.io/Protex-Hack2Win/index.html
 
 ## 📂 Project Structure
 
-    Protex-Hack2Win/
+     Signify /
     ├── index.html        # Main landing page
     ├── style.css         # Styling and layout
     ├── script.js         # Core functionality
