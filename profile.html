@@ -27,17 +27,19 @@
       --card-bg: #ffffff;
       --card-border: #e2e8f0;
     }
-.site-footer .copyright-text-wrap {
-  border: none !important;
-}
 
-.site-footer .copyright-text {
-  border: none !important;
-}
+    .site-footer .copyright-text-wrap {
+      border: none !important;
+    }
 
-.site-footer p {
-  border: none !important;
-}
+    .site-footer .copyright-text {
+      border: none !important;
+    }
+
+    .site-footer p {
+      border: none !important;
+    }
+
     body {
       background: var(--signify-light);
       min-height: 100vh;
@@ -66,7 +68,7 @@
     }
 
     .profile-page {
-      padding: 100px 0 60px;
+      padding: 130px 0 50px;
     }
 
     /* ── Side-by-side layout ── */
@@ -468,8 +470,7 @@
       </button>
       <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Signify</a>
       <div class="d-flex align-items-center d-lg-none">
-        <i class="navbar-icon bi-person-circle me-3 profile-icon-btn"
-          style="cursor:pointer;font-size:22px;color:var(--signify-blue);"></i>
+        <i class="navbar-icon bi-person-circle me-3 profile-icon-btn" style="cursor:pointer;font-size:22px;color:var(--signify-blue);"></i>
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-lg-5">
@@ -480,8 +481,7 @@
           <li class="nav-item"><a class="nav-link active" href="profile.html">Profile</a></li>
         </ul>
         <div class="d-lg-flex align-items-center d-none ms-auto">
-          <i class="navbar-icon bi-person-circle me-3 profile-icon-btn"
-            style="cursor:pointer;font-size:22px;color:var(--signify-blue);"></i>
+          <i class="navbar-icon bi-person-circle me-3 profile-icon-btn" style="cursor:pointer;font-size:22px;color:var(--signify-blue);"></i>
         </div>
       </div>
     </div>
@@ -490,27 +490,22 @@
   <main class="profile-page">
     <div class="container">
 
-      <!-- Loading -->
       <div id="loadingState" class="loading-wrap">
         <div class="spinner-border" style="color:var(--signify-blue);" role="status"></div>
       </div>
 
-      <!-- Not logged in -->
       <div id="notLoggedIn" style="display:none;">
         <div class="not-logged-in">
           <i class="bi-person-lock"></i>
           <h3>You're not signed in</h3>
           <p>Sign in to view your profile and stats.</p>
-          <button class="btn-signin" onclick="document.getElementById('authModal').style.display='flex'">Sign
-            In</button>
+          <button class="btn-signin" onclick="document.getElementById('authModal').style.display='flex'">Sign In</button>
         </div>
       </div>
 
-      <!-- Profile content -->
       <div id="profileContent" style="display:none;">
         <div class="profile-layout">
 
-          <!-- LEFT: profile card -->
           <div class="profile-col">
             <div class="profile-card">
               <div class="avatar-circle" id="avatarCircle"></div>
@@ -546,7 +541,6 @@
             </div>
           </div>
 
-          <!-- RIGHT: two stacked badge cards -->
           <div class="badge-col">
 
             <div class="side-card">
@@ -555,8 +549,7 @@
                   <span class="material-symbols-outlined" style="font-size:18px;">star_shine</span>
                   Badges Earned
                 </span>
-                <span id="earnedBadgeCount"
-                  style="color:var(--signify-blue);font-size:12px;letter-spacing:0;text-transform:none;font-weight:700;margin-left:4px;"></span>
+                <span id="earnedBadgeCount" style="color:var(--signify-blue);font-size:12px;letter-spacing:0;text-transform:none;font-weight:700;margin-left:4px;"></span>
               </p>
               <div class="side-card-body" id="earnedBadgesList">
                 <div class="empty-msg"><span>🏅</span>Loading...</div>
@@ -564,13 +557,13 @@
             </div>
 
             <div class="side-card">
-            <p class="side-card-title">
-              <span style="display:inline-flex;align-items:center;gap:6px;">
-                <span class="material-symbols-outlined" style="font-size:18px;">star</span>
-                Badge Progress
-              </span>
-            </p>
-            <div class="side-card-body" id="badgeProgressList">
+              <p class="side-card-title">
+                <span style="display:inline-flex;align-items:center;gap:6px;">
+                  <span class="material-symbols-outlined" style="font-size:18px;">star</span>
+                  Badge Progress
+                </span>
+              </p>
+              <div class="side-card-body" id="badgeProgressList">
                 <div class="empty-msg"><span>📊</span>Loading...</div>
               </div>
             </div>
