@@ -204,6 +204,43 @@
             text-align: center;
         }
 
+        .text-block {
+  position: relative;
+  top: clamp(-50px, -5vw, -20px);  /* 🔥 responsive positioning */
+  left: 50%;
+  padding-top: 20px;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 20;
+}
+
+.typing-text {
+  font-size: clamp(16px, 3vw, 24px);
+  font-family: 'Courier New', monospace;
+  color: #001180;
+  display: inline-block;
+  animation: floatText 3s ease-in-out infinite;
+  white-space: nowrap;     /* prevent ugly wrapping */
+  will-change: transform;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.typing-text {
+  text-shadow: 0 0 8px rgba(100, 143, 255, 0.6);
+}
+
         .rank-1 { color: #f59e0b; }
         .rank-2 { color: #94a3b8; }
         .rank-3 { color: #b45309; }
@@ -387,6 +424,12 @@
 
 <section style="margin-top: 10px; padding: 0; position: relative;">
 
+    <div class="text-block">
+  <div class="typing-text" id="typingText">
+    Practice ASL with Gamified Experience! 
+  </div>
+</div>
+
   <img 
     src="images/signsprites.png"
     style="
@@ -403,17 +446,16 @@
     src="images/play.png"
     style="
       position: absolute;
-      top: 52%;
+      top: 65%;
       left: 80%;
       transform: translate(-50%, -50%);
       width: 370px;
+      max-width: 30%;
+      max-height: fit-content;
       cursor: pointer;
       z-index: 10;
     "
   />
-  <div class="text-block">
-  <div class="typing-text" id="typingText"></div>
-</div>
 </section>
 
 </section>
@@ -458,8 +500,6 @@
     <script type="module" src="js/firebase-auth.js"></script>
     <script type="module" src="js/home.js"></script>
 
-typeEffect();
-</script>
 </body>
 
 </html>
