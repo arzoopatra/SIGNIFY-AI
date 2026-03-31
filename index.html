@@ -718,16 +718,16 @@
     }
 
     @keyframes jiggle {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(-10deg); }
-  50% { transform: rotate(10deg); }
-  75% { transform: rotate(-6deg); }
-  100% { transform: rotate(0deg); }
-}
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-6deg); }
+    100% { transform: rotate(0deg); }
+    }
 
-.jiggle {
-  animation: jiggle 0.6s ease-in-out infinite;
-}
+    .jiggle {
+    animation: jiggle 0.6s ease-in-out infinite;
+    }
   </style>
 </head>
 
@@ -800,6 +800,7 @@
       </button>
       <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Signify</a>
       <div class="d-flex align-items-center d-lg-none">
+<<<<<<< HEAD
         <div class="navbar-icon navbar-chat-btn bot-icon me-3" onclick="openChatbot()" title="Chat with signMate" role="button" aria-label="Open signMate chat">
           <svg class="navbar-chat-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <rect x="14" y="16" width="36" height="34" rx="10" fill="#8FAADC" stroke="#0B3D91" stroke-width="4"/>
@@ -815,7 +816,20 @@
           </svg>
         </div>
         <i class="navbar-icon bi-person-circle me-3 profile-icon-btn" style="cursor:pointer;font-size:22px;"></i>
+=======
+  
+  <!-- 🎁 ADD BOX HERE -->
+<div class="box navbar-box me-2" onclick="openBox(this)">
+      <div class="box-body small-box">
+      <div class="box-lid">
+        <div class="box-bowtie"></div>
+>>>>>>> e0236d4b0aa8c7e158f3b0893094c48007103006
       </div>
+    </div>
+  </div>
+
+  <i class="navbar-icon bi-person-circle me-3 profile-icon-btn"></i>
+</div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-lg-5">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -1005,7 +1019,7 @@
       let confettiShown = localStorage.getItem("asl-confetti");
 
       if (!saved || JSON.parse(saved).date !== today) {
-        const res = await fetch("http://localhost:3000/api/asl-tip");
+        const res = await fetch("https://asl-backend-u3tt.onrender.com/api/asl-tip");
         const data = await res.json();
         const type = Math.random() > 0.5 ? "tip" : "sign";
         const content = {
@@ -1026,64 +1040,76 @@
       };
     }
 
-    async function openBox() {
-      if (!isUserLoggedIn) {
-      document.querySelector(".profile-icon-btn").click();
-      return;
-      }
-      document.querySelector(".small-box")?.classList.remove("jiggle");
-      if (isOpen) return;
-      isOpen = true;
-      const box = document.getElementById("boxBody");
-      const card = document.getElementById("card");
-      const tipEl = document.getElementById("tip");
-      const img = document.getElementById("aslImage");
-      document.getElementById("backdrop").classList.add("show");
-      const icon = document.getElementById("icon"); 
-      const titleText = document.getElementById("titleText");
-      box.classList.add("active");
+    async function openBox(el) {
+  if (!isUserLoggedIn) {
+    document.querySelector(".profile-icon-btn").click();
+    return;
+  }
 
-      setTimeout(async () => {
-        card.classList.add("show");
-        img.style.display = "none";
-        // 🔄 LOADING STATE
-        icon.className = "fa-solid fa-robot";
-        titleText.innerText = "Thinking...";
-        tipEl.innerHTML = "<div class='card_loader'></div>";
-        const content = await getDailyContent(); 
-        // 🎉 CONFETTI
-        if (content.isNew && !localStorage.getItem("asl-confetti")) {
-          launchConfetti();
-          localStorage.setItem("asl-confetti", "true");
-        }
-        // 🔥 FINAL TITLE + ICON
-        if (content.type === "sign") {
-          icon.className = "fa-solid fa-hand";
-          titleText.innerText = "Sign of the Day";
-        } else {
-          icon.className = "fa-solid fa-lightbulb";
-          titleText.innerText = "Tip of the Day";
-        }
-        // 🧠 TIP TEXT
-        tipEl.innerText = content.tip;
-        // 🖼️ IMAGE
-        if (content.type === "sign") {
-          for (let key in aslImages) {
-            if (content.tip.toLowerCase().includes(key)) {
-              img.src = aslImages[key];
-              img.style.display = "block";
-              break;
-            }
-          }
-        }
-      }, 600);
+  document.querySelectorAll(".small-box").forEach(box => {
+    box.classList.remove("jiggle");
+  });
+
+  if (isOpen) return;
+  isOpen = true;
+
+  const box = el.querySelector(".box-body"); 
+  box.classList.add("active");
+
+  const boxes = document.querySelectorAll(".box-body");
+  const card = document.getElementById("card");
+  const tipEl = document.getElementById("tip");
+  const img = document.getElementById("aslImage");
+  const icon = document.getElementById("icon");
+  const titleText = document.getElementById("titleText");
+
+  document.getElementById("backdrop").classList.add("show");
+
+  boxes.forEach(box => box.classList.add("active"));
+
+  setTimeout(async () => {
+    card.classList.add("show");
+    img.style.display = "none";
+
+    icon.className = "fa-solid fa-robot";
+    titleText.innerText = "Thinking...";
+    tipEl.innerHTML = "<div class='card_loader'></div>";
+
+    const content = await getDailyContent();
+
+    if (content.isNew && !localStorage.getItem("asl-confetti")) {
+      launchConfetti();
+      localStorage.setItem("asl-confetti", "true");
     }
+
+    if (content.type === "sign") {
+      icon.className = "fa-solid fa-hand";
+      titleText.innerText = "Sign of the Day";
+    } else {
+      icon.className = "fa-solid fa-lightbulb";
+      titleText.innerText = "Tip of the Day";
+    }
+
+    tipEl.innerText = content.tip;
+
+    if (content.type === "sign") {
+      for (let key in aslImages) {
+        if (content.tip.toLowerCase().includes(key)) {
+          img.src = aslImages[key];
+          img.style.display = "block";
+          break;
+        }
+      }
+    }
+  }, 600);
+}
 
     /* ===== CLOSE BOX ===== */
     function closeCard() {
       document.getElementById("card").classList.remove("show");
-      document.getElementById("boxBody").classList.remove("active");
-      document.getElementById("backdrop").classList.remove("show");
+document.querySelectorAll(".box-body").forEach(box => {
+  box.classList.remove("active");
+});      document.getElementById("backdrop").classList.remove("show");
       isOpen = false;
     }
 
@@ -1099,8 +1125,9 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   if (checkNewTip()) {
-    document.querySelector(".small-box")?.classList.add("jiggle");
-  }
+document.querySelectorAll(".small-box").forEach(box => {
+  box.classList.add("jiggle");
+});  }
 });
 
     function launchConfetti() {

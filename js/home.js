@@ -26,6 +26,10 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
+onAuthStateChanged(auth, (user) => {
+  isUserLoggedIn = !!user;
+});
+
 /* =========================================================
    🔄 LOADER CONTROL (GLOBAL - RUNS ONLY ONCE)
 ========================================================= */
