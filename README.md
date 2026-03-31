@@ -46,45 +46,35 @@ Track your performance:
 
 Start your learning journey with a warm, personalized daily heart greeting.
 
-Encourages consistency and motivation
-Builds an emotional connection with the platform
-Makes learning feel welcoming and human
-
-
+- Encourages consistency and motivation
+- Builds an emotional connection with the platform
+- Makes learning feel welcoming and human
+  
 ### 🤝 SignMate – AI Chat Assistant
 
 Meet SignMate, your built-in conversational assistant for everything ASL.
 
-Answers queries related to sign language
-Explains gestures, meanings, and usage
-Helps resolve doubts instantly
-Acts as a learning companion throughout your journey
-
-
+- Answers queries related to sign language
+- Explains gestures, meanings, and usage
+- Helps resolve doubts instantly
+- Acts as a learning companion throughout your journey
+  
 ### 🎮 Sign Sprites – Gamified Practice
 
 Sign Sprites makes learning fun through interactive mini-games.
 
-Practice ASL through engaging challenges
-Reinforce memory with play-based learning
-Improve speed and accuracy in recognition
-Ideal for beginners and advanced learners alike
+- Practice ASL through engaging challenges
+- Reinforce memory with play-based learning
+- Improve speed and accuracy in recognition
+- Suitable for both beginners and advanced learners
 
-### 🧩 Mini Learning Game
+### 🧾 ASL Mystery Box
 
-A camera-based interactive game to practice ASL:
+A small pop-up box for quick daily ASL learning.
 
-Tests your signs in real-time
-Improves speed and accuracy
-Keeps learning fun and engaging
-
-### 🧾 ASL Box
-
-A dedicated ASL Box for structured learning and quick reference.
-
-Displays signs clearly for practice
-Helps revise previously learned gestures
-Acts as a visual learning hub
+- Shows a daily sign or tip
+- Helps with quick practice
+- Keeps learning simple and consistent
 
 ### 🔒 Privacy Focused
 - 100% on-device processing  

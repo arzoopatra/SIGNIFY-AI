@@ -225,26 +225,11 @@ async function loadMiniLeaderboard(currentUid) {
 /* =========================================================
    🤖 AI MESSAGE
 ========================================================= */
-const HF_API_KEY = import.meta.env.HF_API_KEY;
-
 async function generateMessage() {
   try {
-    const res = await fetch(
-      "https://api-inference.huggingface.co/models/google/flan-t5-base",
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${HF_API_KEY}`,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          inputs: "Write a short motivational message under 8 words"
-        })
-      }
-    );
-
+    const res = await fetch("https://asl-backend-u3tt.onrender.com/api/letter-msg");
     const data = await res.json();
-    return data[0]?.generated_text || "Keep going 💙";
+    return data.message || "Keep going 💙";
   } catch {
     return "You’re doing amazing 💙";
   }

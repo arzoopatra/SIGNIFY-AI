@@ -20,25 +20,46 @@ app.get("/", (req, res) => {
 });
 
 // AI ROUTE
-app.get("/api/asl-tip", async (req, res) => {
+app.get("/api/letter-msg", async (req, res) => {
   try {
     const response = await client.chat.completions.create({
-      model: "meta-llama/llama-3-8b-instruct", // ✅ FREE
+      model: "meta-llama/llama-3-8b-instruct",
       messages: [
         {
           role: "user",
-          content: "Give a unique beginner-friendly ASL tip in 1 short sentence. Do not repeat common tips."
+          content: "Write a short emotional motivational message under 10 words."
         }
       ]
     });
 
-    const tip = response.choices[0].message.content;
-
-    res.json({ tip });
+    res.json({
+      message: response.choices[0].message.content
+    });
 
   } catch (err) {
     console.error(err);
-    res.json({ error: "OpenRouter failed" });
+    res.json({ message: "Keep learning 💙" });
+  }
+});
+
+app.get("/api/asl-tip", async (req, res) => {
+  try {
+    const response = await client.chat.completions.create({
+      model: "meta-llama/llama-3-8b-instruct",
+      messages: [
+        {
+          role: "user",
+          content: "Give a unique beginner-friendly ASL tip in 1 short sentence."
+        }
+      ]
+    });
+
+    res.json({
+      tip: response.choices[0].message.content
+    });
+
+  } catch {
+    res.json({ tip: "Practice daily ✋" });
   }
 });
 
