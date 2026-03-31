@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/letter_style.css">
+  <link rel="stylesheet" href="chatbot/chatbot.css">
   <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Molengo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -682,6 +683,25 @@
 <body>
   <div id="backdrop"></div>
 
+  <div id="chatbotWidget" class="chatbot-widget" aria-hidden="true">
+    <div class="chatbot-card">
+      <div class="chatbot-header">
+        <div>
+          <h3 class="chatbot-title"><i class="fa-solid fa-hand-paper chat-icon"></i> sign<span class="accent">Mate</span></h3>
+          <p class="chatbot-subtitle">Ask about ASL signs, phrases, or simple words.</p>
+        </div>
+        <button id="chatbotCloseBtn" class="chatbot-close" aria-label="Close chat">×</button>
+      </div>
+      <div id="chatbotMessages" class="chatbot-body"></div>
+      <form id="chatForm" class="chatbot-input-row">
+        <input id="chatInput" class="chatbot-input" type="text" placeholder="Ask about a sign..." autocomplete="off" />
+        <button type="submit" class="chatbot-send" aria-label="Send message">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
   <div id="card" class="card">
     <div class="card-header">
       <i id="icon" class="fa-solid fa-lightbulb"></i>
@@ -750,8 +770,8 @@
           <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
         </ul>
         <div class="d-lg-flex align-items-center d-none ms-auto">
-<div class="box navbar-box me-2" onclick="openBox(this)">
-              <div class="box-body small-box">
+          <div class="box navbar-box me-2" onclick="openChatbot()" title="Open chat">
+            <div id="boxBody" class="box-body small-box">
               <div class="box-lid">
                 <div class="box-bowtie"></div>
               </div>
@@ -1049,6 +1069,7 @@ document.querySelectorAll(".small-box").forEach(box => {
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script type="module" src="chatbot/chatbot.js"></script>
   <script type="module" src="js/firebase-auth.js"></script>
   <script type="module" src="js/home.js"></script>
 </body>
