@@ -27,7 +27,7 @@ app.get("/api/letter-msg", async (req, res) => {
       messages: [
         {
           role: "user",
-          content: "Write a short emotional motivational message under 10 words."
+          content: "Write a short emotional motivational message under 8 words."
         }
       ]
     });
@@ -49,9 +49,10 @@ app.get("/api/asl-tip", async (req, res) => {
       messages: [
         {
           role: "user",
-          content: "Give a unique beginner-friendly ASL tip in 1 short sentence."
+          content: "Give a very short ASL learning tip in under 8 words."
         }
-      ]
+      ],
+      max_tokens: 20
     });
 
     res.json({
@@ -59,7 +60,7 @@ app.get("/api/asl-tip", async (req, res) => {
     });
 
   } catch {
-    res.json({ tip: "Practice daily ✋" });
+    res.json({ tip: "Practice daily 💙" });
   }
 });
 
