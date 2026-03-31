@@ -68,13 +68,13 @@ Sign Sprites makes learning fun through interactive mini-games.
 - Improve speed and accuracy in recognition
 - Suitable for both beginners and advanced learners
 
-### 🧾 ASL Box
+### 🧾 ASL Mystery Box
 
-A dedicated ASL Box for structured learning and quick reference.
+A small pop-up box for quick daily ASL learning.
 
-- Displays signs clearly for practice
-- Helps revise previously learned gestures
-- Acts as a visual learning hub
+- Shows a daily sign or tip
+- Helps with quick practice
+- Keeps learning simple and consistent
 
 ### 🔒 Privacy Focused
 - 100% on-device processing  
