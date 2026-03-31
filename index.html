@@ -411,6 +411,57 @@
     .navbar-box {
       position: relative;
       margin: 0;
+      cursor: pointer;
+    }
+
+    .bot-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      animation: bot-pulse 2.5s ease-in-out infinite;
+    }
+
+    .bot-icon:hover {
+      transform: scale(1.14);
+    }
+
+    .navbar-chat-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .navbar-chat-svg .chat-eye {
+      transform-origin: center;
+      animation: eye-blink 3.2s infinite ease-in-out;
+    }
+
+    .navbar-chat-svg .chat-dot {
+      opacity: 0.65;
+      animation: dot-blink 1.7s infinite ease-in-out;
+    }
+
+    .navbar-chat-svg .dot1 { animation-delay: 0s; }
+    .navbar-chat-svg .dot2 { animation-delay: 0.2s; }
+    .navbar-chat-svg .dot3 { animation-delay: 0.4s; }
+
+    @keyframes bot-pulse {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-2px) scale(1.03); }
+    }
+
+    @keyframes eye-blink {
+      0%, 20%, 100% { transform: scaleY(1); }
+      10% { transform: scaleY(0.2); }
+    }
+
+    @keyframes dot-blink {
+      0%, 100% { opacity: 0.65; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.3); }
     }
 
     .box-body {
@@ -749,6 +800,20 @@
       </button>
       <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Signify</a>
       <div class="d-flex align-items-center d-lg-none">
+        <div class="navbar-icon navbar-chat-btn bot-icon me-3" onclick="openChatbot()" title="Chat with signMate" role="button" aria-label="Open signMate chat">
+          <svg class="navbar-chat-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <rect x="14" y="16" width="36" height="34" rx="10" fill="#8FAADC" stroke="#0B3D91" stroke-width="4"/>
+            <rect x="27" y="8" width="10" height="10" rx="3" fill="#0B3D91"/>
+            <rect x="46" y="30" width="6" height="16" rx="3" fill="#0B3D91"/>
+            <rect x="42" y="44" width="12" height="4" rx="2" fill="#0B3D91"/>
+            <circle class="chat-eye" cx="24" cy="26" r="3.5" fill="#fff"/>
+            <circle class="chat-eye" cx="40" cy="26" r="3.5" fill="#fff"/>
+            <path d="M25 36c3 3.5 7 3.5 10 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle class="chat-dot dot1" cx="24" cy="47" r="2.5" fill="#F4C542"/>
+            <circle class="chat-dot dot2" cx="32" cy="47" r="2.5" fill="#F4C542"/>
+            <circle class="chat-dot dot3" cx="40" cy="47" r="2.5" fill="#F4C542"/>
+          </svg>
+        </div>
         <i class="navbar-icon bi-person-circle me-3 profile-icon-btn" style="cursor:pointer;font-size:22px;"></i>
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -760,12 +825,26 @@
           <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
         </ul>
         <div class="d-lg-flex align-items-center d-none ms-auto">
-          <div class="box navbar-box me-2" onclick="openChatbot()" title="Open chat">
-            <div id="boxBody" class="box-body small-box">
+          <div class="box navbar-box me-3" onclick="openBox()" title="Open mystery box">
+            <div id="boxBody" class="box-body small-box" onclick="openBox()" aria-label="Mystery box">
               <div class="box-lid">
                 <div class="box-bowtie"></div>
               </div>
             </div>
+          </div>
+          <div class="navbar-icon navbar-chat-btn bot-icon me-3" onclick="openChatbot()" title="Chat with signMate" role="button" aria-label="Open signMate chat">
+            <svg class="navbar-chat-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <rect x="14" y="16" width="36" height="34" rx="10" fill="#8FAADC" stroke="#0B3D91" stroke-width="4"/>
+              <rect x="27" y="8" width="10" height="10" rx="3" fill="#0B3D91"/>
+              <rect x="46" y="30" width="6" height="16" rx="3" fill="#0B3D91"/>
+              <rect x="42" y="44" width="12" height="4" rx="2" fill="#0B3D91"/>
+              <circle class="chat-eye" cx="24" cy="26" r="3.5" fill="#fff"/>
+              <circle class="chat-eye" cx="40" cy="26" r="3.5" fill="#fff"/>
+              <path d="M25 36c3 3.5 7 3.5 10 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <circle class="chat-dot dot1" cx="24" cy="47" r="2.5" fill="#F4C542"/>
+              <circle class="chat-dot dot2" cx="32" cy="47" r="2.5" fill="#F4C542"/>
+              <circle class="chat-dot dot3" cx="40" cy="47" r="2.5" fill="#F4C542"/>
+            </svg>
           </div>
           <i class="navbar-icon bi-person-circle profile-icon-btn" style="cursor:pointer;font-size:22px;"></i>
         </div>
