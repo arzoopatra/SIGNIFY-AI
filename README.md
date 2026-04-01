@@ -13,7 +13,7 @@ https://arzoopatra.github.io/Protex-Hack2Win/index.html
 ### 🤖 SignAI (Built-in Feature) 
 Real-time sign language translator:
 - Detects ASL gestures using AI  
-- Builds meaningful sentences  
+- Builds meaningful sentences
 - Translates into multiple languages  
 - Converts output to speech instantly
 
@@ -58,6 +58,7 @@ Meet SignMate, your built-in conversational assistant for everything ASL.
 - Explains gestures, meanings, and usage
 - Helps resolve doubts instantly
 - Acts as a learning companion throughout your journey
+- Provides cultural context and etiquette to ensure respectful communication
   
 ### 🎮 Sign Sprites – Gamified Practice
 
