@@ -1,83 +1,49 @@
-# Signify: Breaking Communication Barriers with AI-Powered Sign Language
+# Signify-AI: Breaking Communication Barriers with AI-Powered Sign Language
 
-🌐 **Live Demo:**  
-https://arzoopatra.github.io/Protex-Hack2Win/index.html
+🌐 **Live Demo:**
+[https://arzoopatra.github.io/SIGNIFY-AI/]
 
-## 🚀 Features
+---
 
-### 🎓 Interactive ASL Learning
-- Real-time AI feedback on hand gestures  
-- Progress only when signs are performed correctly  
-- Reinforces accuracy and muscle memory  
+## 🚨 The Problem
 
-### 🤖 SignAI (Built-in Feature) 
-Real-time sign language translator:
-- Detects ASL gestures using AI  
-- Builds meaningful sentences
-- Translates into multiple languages  
-- Converts output to speech instantly
+Over **70 million deaf individuals worldwide** use sign language as their primary mode of communication, yet:
 
-### ⚔️ Live Battle Mode
-- Compete with players in real-time  
-- Create or join rooms  
-- First to perform the correct sign wins 🏆  
+* Most people don’t understand sign language
+* Learning resources are **boring, slow, or inaccessible**
+* Real-time communication remains a challenge
 
-### 🌍 Global Leaderboard
-- Earn XP and climb rankings  
-- Compete with learners worldwide  
+This creates a **massive communication gap** in daily life, education, and workplaces.
 
-### 📊 User Dashboard
-Track your performance:
-- 🔥 Longest streak  
-- 📈 Current streak  
-- ✅ Challenges completed  
-- ⭐ Total XP earned  
+## 💡 Our Solution
 
-### ♿ Accessibility First
-- IBM colorblind-safe palette  
-- High contrast UI for better usability  
+**Signify** is an AI-powered platform that transforms sign language learning into an **interactive, real-time, and engaging experience**.
+We combine: AI gesture recognition, Gamified learning, Real-time competition, Intelligent assistance to make learning **fun, fast, and inclusive**.
 
-### 🧠 Guided Practice
-- Learn ASL words and phrases  
-- Practice real-life conversations  
-- Reference images from trusted sources
+## 🎯 Core Features
 
-### 💖 Daily Heart Greeting
+| Feature                              | Description                                                                                               |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| 🤖 **SignAI – Real-time Translator** | Detects ASL gestures, forms meaningful sentences, and converts them into speech with multilingual support |
+| 🎓 **Interactive Learning System**   | Provides real-time AI feedback and allows progression only after correct sign performance                 |
+| ⚔️ **Live Battle Mode**              | Multiplayer competitive mode where users race to perform correct signs in real-time                       |
+| 🎮 **Sign Sprites (Gamification)**   | Mini-games that improve speed, accuracy, and retention through fun challenges                             |
+| 🤝 **SignMate – AI Assistant**       | Chat-based assistant that explains signs, clears doubts, and provides cultural context                    |
+| 🧾 **ASL Mystery Box**               | Daily pop-up with a sign or tip to encourage consistent learning                                          |
+| 🔐 **Google Authentication**         | Seamless and secure sign-in using Google for quick onboarding and personalized experience                 |
+| 📊 **Dashboard & Tracking**          | Tracks streaks, XP, challenges, and overall performance                                                   |
+| 🌍 **Global Leaderboard**            | Allows users to compete globally and climb rankings                                                       |
+| 💖 **Daily Heart Greeting**          | Personalized welcome that builds engagement and emotional connection                                      |
+| ♿ **Accessibility First Design**    | Colorblind-safe palette and high contrast UI for better usability                                         |
+| 🔒 **Privacy Focused System**        | 100% on-device processing with no storage of user video or image data                                     |
 
-Start your learning journey with a warm, personalized daily heart greeting.
+---
 
-- Encourages consistency and motivation
-- Builds an emotional connection with the platform
-- Makes learning feel welcoming and human
-  
-### 🤝 SignMate – AI Chat Assistant
+## 👩‍💻 Team & Contributions
 
-Meet SignMate, your built-in conversational assistant for everything ASL.
-
-- Answers queries related to sign language
-- Explains gestures, meanings, and usage
-- Helps resolve doubts instantly
-- Acts as a learning companion throughout your journey
-- Provides cultural context and etiquette to ensure respectful communication
-  
-### 🎮 Sign Sprites – Gamified Practice
-
-Sign Sprites makes learning fun through interactive mini-games.
-
-- Practice ASL through engaging challenges
-- Reinforce memory with play-based learning
-- Improve speed and accuracy in recognition
-- Suitable for both beginners and advanced learners
-
-### 🧾 ASL Mystery Box
-
-A small pop-up box for quick daily ASL learning.
-
-- Shows a daily sign or tip
-- Helps with quick practice
-- Keeps learning simple and consistent
-
-### 🔒 Privacy Focused
-- 100% on-device processing  
-- No video/image data stored  
-- Low latency and secure
+| Name       | Role                                    |
+| ---------- | --------------------------------------- |
+| **Arzoo**  | Frontend Developer + Sign Sprites Game  |
+| **Nikita** | Frontend Developer + ASL Mystery Box    |
+| **Sakshi** | AI Integration (ChatGPT) + Optimization |
+| **Tripti** | Frontend + Backend Management           |
