@@ -1,82 +1,83 @@
 # Signify: Breaking Communication Barriers with AI-Powered Sign Language
 
-🌐 **Live Demo:**
-[https://arzoopatra.github.io/Protex-Hack2Win/index.html](https://arzoopatra.github.io/Protex-Hack2Win/index.html)
+🌐 **Live Demo:**  
+https://arzoopatra.github.io/Protex-Hack2Win/index.html
 
----
+## 🚀 Features
 
-## 🚨 The Problem
+### 🎓 Interactive ASL Learning
+- Real-time AI feedback on hand gestures  
+- Progress only when signs are performed correctly  
+- Reinforces accuracy and muscle memory  
 
-Over **70 million deaf individuals worldwide** use sign language as their primary mode of communication, yet:
+### 🤖 SignAI (Built-in Feature) 
+Real-time sign language translator:
+- Detects ASL gestures using AI  
+- Builds meaningful sentences
+- Translates into multiple languages  
+- Converts output to speech instantly
 
-* Most people don’t understand sign language
-* Learning resources are **boring, slow, or inaccessible**
-* Real-time communication remains a challenge
+### ⚔️ Live Battle Mode
+- Compete with players in real-time  
+- Create or join rooms  
+- First to perform the correct sign wins 🏆  
 
-This creates a **massive communication gap** in daily life, education, and workplaces.
+### 🌍 Global Leaderboard
+- Earn XP and climb rankings  
+- Compete with learners worldwide  
 
----
+### 📊 User Dashboard
+Track your performance:
+- 🔥 Longest streak  
+- 📈 Current streak  
+- ✅ Challenges completed  
+- ⭐ Total XP earned  
 
-## 💡 Our Solution
+### ♿ Accessibility First
+- IBM colorblind-safe palette  
+- High contrast UI for better usability  
 
-**Signify** is an AI-powered platform that transforms sign language learning into an **interactive, real-time, and engaging experience**.
+### 🧠 Guided Practice
+- Learn ASL words and phrases  
+- Practice real-life conversations  
+- Reference images from trusted sources
 
-We combine:
+### 💖 Daily Heart Greeting
 
-* 🤖 AI gesture recognition
-* 🎮 Gamified learning
-* ⚔️ Real-time competition
-* 🧠 Intelligent assistance
+Start your learning journey with a warm, personalized daily heart greeting.
 
-to make learning **fun, fast, and inclusive**.
+- Encourages consistency and motivation
+- Builds an emotional connection with the platform
+- Makes learning feel welcoming and human
+  
+### 🤝 SignMate – AI Chat Assistant
 
----
+Meet SignMate, your built-in conversational assistant for everything ASL.
 
-## 🚀 What Makes Signify Stand Out
+- Answers queries related to sign language
+- Explains gestures, meanings, and usage
+- Helps resolve doubts instantly
+- Acts as a learning companion throughout your journey
+- Provides cultural context and etiquette to ensure respectful communication
+  
+### 🎮 Sign Sprites – Gamified Practice
 
-✨ **Learn by Doing, Not Watching**
-Real-time feedback ensures users only progress when they perform correctly.
+Sign Sprites makes learning fun through interactive mini-games.
 
-✨ **From Learning to Real Communication**
-SignAI translates gestures into **speech + text instantly**.
+- Practice ASL through engaging challenges
+- Reinforce memory with play-based learning
+- Improve speed and accuracy in recognition
+- Suitable for both beginners and advanced learners
 
-✨ **Gamification = Retention**
-Battles, XP, streaks, and mini-games make learning addictive.
+### 🧾 ASL Mystery Box
 
-✨ **AI Companion (SignMate)**
-A built-in assistant to guide, explain, and support learners anytime.
+A small pop-up box for quick daily ASL learning.
 
-✨ **Privacy First**
-All processing is done **on-device** — no data stored.
+- Shows a daily sign or tip
+- Helps with quick practice
+- Keeps learning simple and consistent
 
----
-
-## 🎯 Core Features
-
-| Feature                              | Description                                                                                               |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| 🤖 **SignAI – Real-time Translator** | Detects ASL gestures, forms meaningful sentences, and converts them into speech with multilingual support |
-| 🎓 **Interactive Learning System**   | Provides real-time AI feedback and allows progression only after correct sign performance                 |
-| ⚔️ **Live Battle Mode**              | Multiplayer competitive mode where users race to perform correct signs in real-time                       |
-| 🎮 **Sign Sprites (Gamification)**   | Mini-games that improve speed, accuracy, and retention through fun challenges                             |
-| 🤝 **SignMate – AI Assistant**       | Chat-based assistant that explains signs, clears doubts, and provides cultural context                    |
-| 🧾 **ASL Mystery Box**               | Daily pop-up with a sign or tip to encourage consistent learning                                          |
-| 🔐 **Google Authentication**         | Seamless and secure sign-in using Google for quick onboarding and personalized experience                 |
-| 📊 **Dashboard & Progress Tracking** | Tracks streaks, XP, challenges, and overall performance                                                   |
-| 🌍 **Global Leaderboard**            | Allows users to compete globally and climb rankings                                                       |
-| 💖 **Daily Heart Greeting**          | Personalized welcome that builds engagement and emotional connection                                      |
-| ♿ **Accessibility First Design**     | Colorblind-safe palette and high contrast UI for better usability                                         |
-| 🔒 **Privacy Focused System**        | 100% on-device processing with no storage of user video or image data                                     |
-
----
-
-## 👩‍💻 Team & Contributions
-
-| Name       | Role                                    |
-| ---------- | --------------------------------------- |
-| **Arzoo**  | Frontend Developer + Sign Sprites Game  |
-| **Nikita** | Frontend Developer + ASL Mystery Box    |
-| **Sakshi** | AI Integration (ChatGPT) + Optimization |
-| **Tripti** | Frontend + Backend Management           |
-
----
+### 🔒 Privacy Focused
+- 100% on-device processing  
+- No video/image data stored  
+- Low latency and secure
