@@ -370,10 +370,17 @@ document.getElementById("speakSentence").onclick = () => {
 async function translateSentence() {
   const text = sentence.trim();
   const target = document.getElementById("languageSelect").value;
+
+  if (target === "en") {
+    document.getElementById("translatedText").innerText = text;
+    return;
+  }
+
   if (!text || text === "Waiting for gesture...") {
     alert("No sentence to translate!");
     return;
   }
+
   document.getElementById("translatedText").innerText = "Translating...";
   try {
     const res = await fetch(
