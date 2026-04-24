@@ -394,8 +394,6 @@ async function translateSentence() {
       const lowerTranslated = translated.toLowerCase();
       const garbageKeywords = [
         "delhi metro",
-        "swagat",
-        "welcome to",
         "station",
       ];
       const hasGarbage = garbageKeywords.some((keyword) =>
